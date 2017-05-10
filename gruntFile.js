@@ -28,6 +28,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', fakeTargetTask('build'));
   grunt.registerTask('publish', fakeTargetTask('publish'));
+  grunt.registerTask('changelog', ['conventionalChangelog']);
   //
 
   // Project configuration.
@@ -130,10 +131,10 @@ module.exports = function (grunt) {
       }
     },
 
-    changelog: {
-      options: {
-        dest: 'CHANGELOG.md',
-        from: grunt.option('from')
+    conventionalChangelog: {
+      options: { changelogOpts: { preset: 'angular' } },
+      release: {
+        src: 'CHANGELOG.md'
       }
     }
   });

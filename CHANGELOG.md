@@ -1,4 +1,26 @@
 <a name="0.3.0"></a>
+# [0.3.0](https://github.com/easyops-cn/ui-codemirror/compare/v0.0.7...v0.3.0) (2017-05-10)
+
+
+### Bug Fixes
+
+* **grunt:** do a standard livereload over the built branch ([a856e08](https://github.com/easyops-cn/ui-codemirror/commit/a856e08))
+* digest in progress ([645d6e5](https://github.com/easyops-cn/ui-codemirror/commit/645d6e5)), closes [#73](https://github.com/easyops-cn/ui-codemirror/issues/73) [#74](https://github.com/easyops-cn/ui-codemirror/issues/74) [#66](https://github.com/easyops-cn/ui-codemirror/issues/66)
+* element not removed when the element gets replaced ([7dfcb07](https://github.com/easyops-cn/ui-codemirror/commit/7dfcb07))
+* error calling scope.$applyAsync ([15b84f0](https://github.com/easyops-cn/ui-codemirror/commit/15b84f0)), closes [#89](https://github.com/easyops-cn/ui-codemirror/issues/89)
+* not watching `ui-codemirror-opts` attribute ([0f5802e](https://github.com/easyops-cn/ui-codemirror/commit/0f5802e))
+* refresh codemirror in next event loop ([1c03cac](https://github.com/easyops-cn/ui-codemirror/commit/1c03cac)), closes [#68](https://github.com/easyops-cn/ui-codemirror/issues/68) [#76](https://github.com/easyops-cn/ui-codemirror/issues/76)
+* undefined newValue watched ([f506149](https://github.com/easyops-cn/ui-codemirror/commit/f506149))
+
+
+### Features
+
+* **directive:** add instance access throught $broadcast event ([14f6954](https://github.com/easyops-cn/ui-codemirror/commit/14f6954)), closes [#53](https://github.com/easyops-cn/ui-codemirror/issues/53)
+* **publisher:** initial publisher use commit ([a144e2f](https://github.com/easyops-cn/ui-codemirror/commit/a144e2f))
+
+
+
+<a name="0.3.0"></a>
 ## 0.3.0 (2015-05-04)
 
 * **bower:** bump to CodeMirror ^5
