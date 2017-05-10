@@ -5,7 +5,7 @@ This directive allows you to add [CodeMirror](http://codemirror.net/) to your te
 ## Requirements
 
 - AngularJS 1.3.x
-- [CodeMirror 4.8.x](https://github.com/marijnh/CodeMirror)
+- [CodeMirror 5.x](https://github.com/marijnh/CodeMirror)
 
 
 ## Usage
@@ -168,7 +168,7 @@ grunt dist build:bower
 
 it will put the final files in the _'dist'_ folder and a sample of the bower tag output in the _'out/built/bower'_ folder.
 
-[travis-url]: https://travis-ci.org/angular-ui/ui-codemirror
-[travis-image]: https://travis-ci.org/angular-ui/ui-codemirror.svg?branch=master
-[codeclimate-url]: https://codeclimate.com/github/angular-ui/ui-codemirror
-[codeclimate-image]: https://codeclimate.com/github/angular-ui/ui-codemirror/badges/gpa.svg
+[travis-url]: https://travis-ci.org/easyops-cn/ui-codemirror
+[travis-image]: https://travis-ci.org/easyops-cn/ui-codemirror.svg?branch=master
+[codeclimate-url]: https://codeclimate.com/easyops-cn/ui-codemirror
+[codeclimate-image]: https://codeclimate.com/github/easyops-cn/ui-codemirror/badges/gpa.svg
