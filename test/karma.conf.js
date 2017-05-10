@@ -58,7 +58,7 @@ module.exports = function(config) {
     // - Safari (only Mac; has to be installed with `npm install karma-safari-launcher`)
     // - PhantomJS
     // - IE (only Windows; has to be installed with `npm install karma-ie-launcher`)
-    browsers: ['Chrome', 'Firefox', 'PhantomJS'],
+    browsers: ['Chrome', 'Firefox'],
 
 
     // If browser does not capture in given timeout [ms], kill it
@@ -73,7 +73,7 @@ module.exports = function(config) {
 
   if(process.env.TRAVIS){
     config.set({
-      browsers: ['TravisCI_Chrome', 'Firefox', 'PhantomJS'],
+      browsers: ['TravisCI_Chrome', 'Firefox'],
       customLaunchers: {
         TravisCI_Chrome: {
           base: 'Chrome',
