@@ -10,11 +10,8 @@ before_install:
 - sh -e /etc/init.d/xvfb start
 - npm update -g
 before_script:
-- npm install -qg bower grunt-cli
+- npm install -qg bower
 - bower install
-after_success:
-- "./node_modules/angular-ui-publisher/travis/authentication.sh || exit 0"
-- "grunt dist build:gh-pages publish:gh-pages build:bower publish:bower"
 env:
   global:
   - REPO="git@github.com:angular-ui/ui-codemirror.git"
