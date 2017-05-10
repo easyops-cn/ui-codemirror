@@ -10,19 +10,17 @@ This directive allows you to add [CodeMirror](http://codemirror.net/) to your te
 
 ## Usage
 
-You can get it from [Bower](http://bower.io/)
-
 ```sh
-bower install angular-ui-codemirror
+yarn add @easyops/angular-ui-codemirror
 ```
 
 This will copy the UI.Codemirror files into a `bower_components` folder, along with its dependencies. Load the script files in your application:
 
 ```html
-<link rel="stylesheet" type="text/css" href="bower_components/codemirror/lib/codemirror.css">
-<script type="text/javascript" src="bower_components/codemirror/lib/codemirror.js"></script>
+<link rel="stylesheet" type="text/css" href="node_modules/codemirror/lib/codemirror.css">
+<script type="text/javascript" src="node_modules/codemirror/lib/codemirror.js"></script>
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-<script type="text/javascript" src="bower_components/angular-ui-codemirror/ui-codemirror.js"></script>
+<script type="text/javascript" src="node_modules/angular-ui-codemirror/ui-codemirror.js"></script>
 ```
 
 Add the UI.Codemirror module as a dependency to your application module:
@@ -128,12 +126,10 @@ myAppModule.controller('MyController', [ '$scope', function($scope) {
 
 ## Testing
 
-We use Karma and jshint to ensure the quality of the code.  The easiest way to run these checks is to use grunt:
+We use Karma and jshint to ensure the quality of the code. 
 
 ```sh
-npm install -g grunt-cli
-npm install && bower install
-grunt
+yarn test
 ```
 
 The karma task will try to open Firefox and Chrome as browser in which to run the tests.  Make sure this is available or change the configuration in `test\karma.conf.js`
@@ -158,15 +154,9 @@ It's equal to run separately:
 
 ### Dist
 
-This repo is using the [angular-ui/angular-ui-publisher](https://github.com/angular-ui/angular-ui-publisher).
-New tags will automatically trigger a new publication.
-To test is locally you can trigger a :
-
-```sh
-grunt dist build:bower
+```bash
+npm publish
 ```
-
-it will put the final files in the _'dist'_ folder and a sample of the bower tag output in the _'out/built/bower'_ folder.
 
 [travis-url]: https://travis-ci.org/easyops-cn/ui-codemirror
 [travis-image]: https://travis-ci.org/easyops-cn/ui-codemirror.svg?branch=master
